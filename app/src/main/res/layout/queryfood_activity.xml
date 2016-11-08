@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/system_backgr"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    >
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="4"
+        >
+
+        <TextView
+            android:id="@+id/return_tv"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/query_bt_selector"
+            android:text="@string/returntv"
+            android:gravity="center"
+            android:textColor="@color/black9"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black6"
+            android:layout_toRightOf="@+id/return_tv"
+            style="@style/tb_five_dpmargin"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@drawable/query_bt_selector"
+            android:textColor="@color/black9"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/Print_tv"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/query_bt_selector"
+            android:text="@string/Print_Order"
+            android:textColor="@color/black9"
+            android:textSize="17dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black6"
+            android:layout_toLeftOf="@+id/Print_tv"
+            style="@style/tb_five_dpmargin"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black6"
+        style="@style/lr_five_dpmargin"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tag_textStyle1"
+            android:text="@string/foodname"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            style="@style/tag_textStyle1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            style="@style/tag_textStyle1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black6"
+        style="@style/lr_five_dpmargin"
+        />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider"
+        android:layout_weight="1"></ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black6"
+        style="@style/lr_five_dpmargin"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/black9"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text="总价:"
+            />
+        <TextView
+            android:id="@+id/all_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            style="@style/tag_textStyle1" />
+
+    </LinearLayout>
+
+</LinearLayout>
