@@ -13,9 +13,11 @@ import com.example.admin.kitchen.R;
 import java.util.List;
 
 import static com.example.admin.bean.Final.ADD_WARTER;
+import static com.example.admin.bean.Final.NEWORDER;
 import static com.example.admin.bean.Final.SETTLE;
 import static com.example.admin.bean.Final.URGE;
 import static com.example.admin.bean.Final.add_warter;
+import static com.example.admin.bean.Final.neworder;
 import static com.example.admin.bean.Final.settle;
 import static com.example.admin.bean.Final.urge;
 
@@ -99,6 +101,11 @@ public class MsgAdapter extends BaseAdapter {
 
             viewHolder.Type.setText(urge);
         }
+        if (NEWORDER == msg) {
+
+            viewHolder.Type.setText(neworder);
+        }
+
 
     }
 

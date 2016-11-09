@@ -114,7 +114,7 @@ public class InvoiceThread extends Thread {
             pos.bold(true);
             pos.printTabSpace(2);
             pos.printWordSpace(1);
-            pos.printText("港式茶餐厅");
+            pos.printText("老楷茶餐厅");
 
             pos.printLocation(0);
             pos.printTextNewLine("----------------------------------------------");

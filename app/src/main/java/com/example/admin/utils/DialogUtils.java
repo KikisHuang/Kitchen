@@ -28,8 +28,12 @@ public class DialogUtils {
        if(Msg==2){
 
            AddWaterAndurge(context,Msg,csid,key,position);
-
        }
+       if(Msg==3){
+
+           AddWaterAndurge(context,Msg,csid,key,position);
+       }
+
     }
 
 
@@ -44,6 +48,10 @@ public class DialogUtils {
         if(msg==1){
             builder.setMessage("是否处理加水操作?");
         }
+        if(msg==3){
+            builder.setMessage("是否处理下单操作?");
+        }
+
         builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog,

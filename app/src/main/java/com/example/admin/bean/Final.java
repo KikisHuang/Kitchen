@@ -43,10 +43,12 @@ public class Final {
     public static final int SETTLE = 0;
     public static final int ADD_WARTER = 1;
     public static final int URGE = 2;
+    public static final int NEWORDER = 3;
 
     public static final String settle = "结账";
     public static final String add_warter = "加水";
     public static final String urge = "催单";
+    public static final String neworder = "下单";
 
     /**
      * 查询上菜状态判断;1：已下单，9：已上菜;
